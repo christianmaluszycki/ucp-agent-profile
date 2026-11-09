@@ -1,1 +1,1 @@
-https://gist.githubusercontent.com/christianmaluszycki/f70b67354db97bc2f1a409027b2abff2/raw/agent-profile.json
+https://cdn.jsdelivr.net/gh/christianmaluszycki/ucp-agent-profile@main/ucp-demo-agent.json
