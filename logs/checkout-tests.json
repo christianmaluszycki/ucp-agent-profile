@@ -1,0 +1,1271 @@
+[
+  {
+    "test": "P1 line item price override",
+    "note": "",
+    "tool": "create_checkout",
+    "base": "https://nordlicht-bb-1.myshopify.com/api/ucp/mcp",
+    "request_arguments": {
+      "checkout": {
+        "line_items": [
+          {
+            "item": {
+              "id": "gid://shopify/ProductVariant/50026700112027",
+              "price": 1
+            },
+            "quantity": 1,
+            "price": 1,
+            "total": 1
+          }
+        ]
+      }
+    },
+    "http": 200,
+    "isError": false,
+    "summary": {
+      "id": "gid://shopify/Checkout/hWNIvozTBzkIVCBENNH2CFWd?key=812865c4db885b4295e3a9c3b19a9914",
+      "status": "incomplete",
+      "currency": "USD",
+      "items": [
+        {
+          "variant": "gid://shopify/ProductVariant/50026700112027",
+          "qty": 1,
+          "price": 60000,
+          "line_total": 60000
+        }
+      ],
+      "totals": {
+        "subtotal": 60000,
+        "total": 60000
+      },
+      "discounts": {
+        "codes": [],
+        "applied": []
+      },
+      "msg_codes": [
+        [
+          "buyer_identity_contact_method_required",
+          "recoverable"
+        ],
+        [
+          "delivery_address_required",
+          "recoverable"
+        ],
+        [
+          "delivery_no_delivery_available_for_merchandise_line",
+          "recoverable"
+        ]
+      ]
+    },
+    "raw": {
+      "id": "gid://shopify/Checkout/hWNIvozTBzkIVCBENNH2CFWd?key=812865c4db885b4295e3a9c3b19a9914",
+      "currency": "USD",
+      "buyer": {
+        "consent": {
+          "dev.ucp.consent.analytics": {
+            "granted": false,
+            "source": "business",
+            "description": "Analytics and performance measurement"
+          },
+          "dev.ucp.consent.preferences": {
+            "granted": false,
+            "source": "business",
+            "description": "Remember preferences and personalize your shopping experience"
+          },
+          "dev.ucp.consent.sale_or_sharing": {
+            "granted": false,
+            "source": "business",
+            "description": "Sale or sharing of personal data with third parties"
+          },
+          "dev.ucp.consent.marketing": {
+            "granted": false,
+            "source": "business",
+            "description": "Marketing communications",
+            "segments": {
+              "dev.ucp.consent.marketing.email": {
+                "granted": false,
+                "source": "business",
+                "description": "Promotional emails"
+              },
+              "dev.ucp.consent.marketing.sms": {
+                "granted": false,
+                "source": "business",
+                "description": "Marketing text messages"
+              }
+            }
+          }
+        }
+      },
+      "line_items": [
+        {
+          "id": "gid://shopify/CartLine/273959ff-7cb4-4a9d-b84f-8c0391bb524c?cart=hWNIvozTBzkIVCBENNH2CFWd",
+          "item": {
+            "id": "gid://shopify/ProductVariant/50026700112027",
+            "title": "The Collection Snowboard: Hydrogen",
+            "price": 60000,
+            "image_url": "https://cdn.shopify.com/s/files/1/0794/5394/6011/files/Main_0a40b01b-5021-48c1-80d1-aa8ab4876d3d.jpg?v=1793626196"
+          },
+          "quantity": 1,
+          "totals": [
+            {
+              "type": "subtotal",
+              "amount": 60000,
+              "display_text": "Subtotal"
+            },
+            {
+              "type": "total",
+              "amount": 60000,
+              "display_text": "Total"
+            }
+          ]
+        }
+      ],
+      "discounts": {
+        "codes": [],
+        "applied": []
+      },
+      "totals": [
+        {
+          "type": "subtotal",
+          "amount": 60000,
+          "display_text": "Subtotal"
+        },
+        {
+          "type": "total",
+          "amount": 60000,
+          "display_text": "Total"
+        }
+      ],
+      "expires_at": "2026-12-09T02:21:25Z",
+      "links": [
+        {
+          "type": "privacy_policy",
+          "title": "Privacy Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589299355.html?locale=en"
+        },
+        {
+          "type": "refund_policy",
+          "title": "Refund Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589332123.html?locale=en"
+        },
+        {
+          "type": "shipping_policy",
+          "title": "Shipping Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589364891.html?locale=en"
+        },
+        {
+          "type": "terms_of_service",
+          "title": "Terms of Service",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589397659.html?locale=en"
+        }
+      ],
+      "payment": {
+        "instruments": []
+      },
+      "messages": [
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "buyer_identity_contact_method_required",
+          "content": "Missing a valid contact method.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "delivery_address_required",
+          "content": "A destination address is required in order to continue.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "delivery_no_delivery_available_for_merchandise_line",
+          "content": "Your cart has been updated and the items you added can’t be shipped to your address. Remove the items to complete your order.",
+          "severity": "recoverable"
+        }
+      ],
+      "status": "incomplete",
+      "continue_url": "https://nordlicht-bb-1.myshopify.com/cart/c/hWNIvozTBzkIVCBENNH2CFWd?key=eelLmTcWmmQaIxvYx4_i7pQRyFlqbawcokTbp6AnHWgioQw8Ac_KEerc2RHD8X5AxwPVmQwTp2X7D6dHVcLiePpMaCNacJ39IWAs9ZSh3oNoYgEKlFCxmRTEDk4XJ6Kggo7MCB7U1ssytGM2qbMNpq8erZRrbdDq2FXvAeiU7JQI04YsXjYpYWUxN64HmYAl"
+    }
+  },
+  {
+    "test": "P2 top-level totals override",
+    "note": "",
+    "tool": "create_checkout",
+    "base": "https://nordlicht-bb-1.myshopify.com/api/ucp/mcp",
+    "request_arguments": {
+      "checkout": {
+        "line_items": [
+          {
+            "item": {
+              "id": "gid://shopify/ProductVariant/50026700112027"
+            },
+            "quantity": 1
+          }
+        ],
+        "totals": [
+          {
+            "type": "total",
+            "amount": 1
+          }
+        ],
+        "total": 1,
+        "subtotal": 1
+      }
+    },
+    "http": 200,
+    "isError": false,
+    "summary": {
+      "id": "gid://shopify/Checkout/hWNIvozcLvK5EMR9g81q3OJ1?key=8d8271bef30f28f0ea5b208cf0136ad7",
+      "status": "incomplete",
+      "currency": "USD",
+      "items": [
+        {
+          "variant": "gid://shopify/ProductVariant/50026700112027",
+          "qty": 1,
+          "price": 60000,
+          "line_total": 60000
+        }
+      ],
+      "totals": {
+        "subtotal": 60000,
+        "total": 60000
+      },
+      "discounts": {
+        "codes": [],
+        "applied": []
+      },
+      "msg_codes": [
+        [
+          "buyer_identity_contact_method_required",
+          "recoverable"
+        ],
+        [
+          "delivery_address_required",
+          "recoverable"
+        ],
+        [
+          "delivery_no_delivery_available_for_merchandise_line",
+          "recoverable"
+        ]
+      ]
+    },
+    "raw": {
+      "id": "gid://shopify/Checkout/hWNIvozcLvK5EMR9g81q3OJ1?key=8d8271bef30f28f0ea5b208cf0136ad7",
+      "currency": "USD",
+      "buyer": {
+        "consent": {
+          "dev.ucp.consent.analytics": {
+            "granted": false,
+            "source": "business",
+            "description": "Analytics and performance measurement"
+          },
+          "dev.ucp.consent.preferences": {
+            "granted": false,
+            "source": "business",
+            "description": "Remember preferences and personalize your shopping experience"
+          },
+          "dev.ucp.consent.sale_or_sharing": {
+            "granted": false,
+            "source": "business",
+            "description": "Sale or sharing of personal data with third parties"
+          },
+          "dev.ucp.consent.marketing": {
+            "granted": false,
+            "source": "business",
+            "description": "Marketing communications",
+            "segments": {
+              "dev.ucp.consent.marketing.email": {
+                "granted": false,
+                "source": "business",
+                "description": "Promotional emails"
+              },
+              "dev.ucp.consent.marketing.sms": {
+                "granted": false,
+                "source": "business",
+                "description": "Marketing text messages"
+              }
+            }
+          }
+        }
+      },
+      "line_items": [
+        {
+          "id": "gid://shopify/CartLine/4614deca-5312-4260-b5c4-371107b2bb10?cart=hWNIvozcLvK5EMR9g81q3OJ1",
+          "item": {
+            "id": "gid://shopify/ProductVariant/50026700112027",
+            "title": "The Collection Snowboard: Hydrogen",
+            "price": 60000,
+            "image_url": "https://cdn.shopify.com/s/files/1/0794/5394/6011/files/Main_0a40b01b-5021-48c1-80d1-aa8ab4876d3d.jpg?v=1793626196"
+          },
+          "quantity": 1,
+          "totals": [
+            {
+              "type": "subtotal",
+              "amount": 60000,
+              "display_text": "Subtotal"
+            },
+            {
+              "type": "total",
+              "amount": 60000,
+              "display_text": "Total"
+            }
+          ]
+        }
+      ],
+      "discounts": {
+        "codes": [],
+        "applied": []
+      },
+      "totals": [
+        {
+          "type": "subtotal",
+          "amount": 60000,
+          "display_text": "Subtotal"
+        },
+        {
+          "type": "total",
+          "amount": 60000,
+          "display_text": "Total"
+        }
+      ],
+      "expires_at": "2026-12-09T02:21:27Z",
+      "links": [
+        {
+          "type": "privacy_policy",
+          "title": "Privacy Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589299355.html?locale=en"
+        },
+        {
+          "type": "refund_policy",
+          "title": "Refund Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589332123.html?locale=en"
+        },
+        {
+          "type": "shipping_policy",
+          "title": "Shipping Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589364891.html?locale=en"
+        },
+        {
+          "type": "terms_of_service",
+          "title": "Terms of Service",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589397659.html?locale=en"
+        }
+      ],
+      "payment": {
+        "instruments": []
+      },
+      "messages": [
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "buyer_identity_contact_method_required",
+          "content": "Missing a valid contact method.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "delivery_address_required",
+          "content": "A destination address is required in order to continue.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "delivery_no_delivery_available_for_merchandise_line",
+          "content": "Your cart has been updated and the items you added can’t be shipped to your address. Remove the items to complete your order.",
+          "severity": "recoverable"
+        }
+      ],
+      "status": "incomplete",
+      "continue_url": "https://nordlicht-bb-1.myshopify.com/cart/c/hWNIvozcLvK5EMR9g81q3OJ1?key=BEpMXfDe1ZwyEp0NHt0loJCD4C-FLrVQzGIJ4u2AlJG-OJ8Ic6DO2EShpvJ024piyt0hIxVwkVnORh6UVPFvfQD3zUwsTiejf2VpeuHm4zORjj62q3PPdRNC7zNsx2WS4FcdMKjefyK7LJKWMeL5ZYHRmkM9zrfW_9jWzdwF7CqvCifhefJCpKtYjcZHR8PR"
+    }
+  },
+  {
+    "test": "P3 discounts fake applied",
+    "note": "",
+    "tool": "create_checkout",
+    "base": "https://nordlicht-bb-1.myshopify.com/api/ucp/mcp",
+    "request_arguments": {
+      "checkout": {
+        "line_items": [
+          {
+            "item": {
+              "id": "gid://shopify/ProductVariant/50026700112027"
+            },
+            "quantity": 1
+          }
+        ],
+        "discounts": {
+          "codes": [],
+          "applied": [
+            {
+              "code": "FREE100",
+              "amount": 60000,
+              "type": "percentage"
+            }
+          ]
+        }
+      }
+    },
+    "http": 200,
+    "isError": false,
+    "summary": {
+      "id": "gid://shopify/Checkout/hWNIvozkuQTQgWHlacYFjnAB?key=ba7d00bda05f200727f90699cf503c0c",
+      "status": "incomplete",
+      "currency": "USD",
+      "items": [
+        {
+          "variant": "gid://shopify/ProductVariant/50026700112027",
+          "qty": 1,
+          "price": 60000,
+          "line_total": 60000
+        }
+      ],
+      "totals": {
+        "subtotal": 60000,
+        "total": 60000
+      },
+      "discounts": {
+        "codes": [],
+        "applied": []
+      },
+      "msg_codes": [
+        [
+          "buyer_identity_contact_method_required",
+          "recoverable"
+        ],
+        [
+          "delivery_address_required",
+          "recoverable"
+        ],
+        [
+          "delivery_no_delivery_available_for_merchandise_line",
+          "recoverable"
+        ]
+      ]
+    },
+    "raw": {
+      "id": "gid://shopify/Checkout/hWNIvozkuQTQgWHlacYFjnAB?key=ba7d00bda05f200727f90699cf503c0c",
+      "currency": "USD",
+      "buyer": {
+        "consent": {
+          "dev.ucp.consent.analytics": {
+            "granted": false,
+            "source": "business",
+            "description": "Analytics and performance measurement"
+          },
+          "dev.ucp.consent.preferences": {
+            "granted": false,
+            "source": "business",
+            "description": "Remember preferences and personalize your shopping experience"
+          },
+          "dev.ucp.consent.sale_or_sharing": {
+            "granted": false,
+            "source": "business",
+            "description": "Sale or sharing of personal data with third parties"
+          },
+          "dev.ucp.consent.marketing": {
+            "granted": false,
+            "source": "business",
+            "description": "Marketing communications",
+            "segments": {
+              "dev.ucp.consent.marketing.email": {
+                "granted": false,
+                "source": "business",
+                "description": "Promotional emails"
+              },
+              "dev.ucp.consent.marketing.sms": {
+                "granted": false,
+                "source": "business",
+                "description": "Marketing text messages"
+              }
+            }
+          }
+        }
+      },
+      "line_items": [
+        {
+          "id": "gid://shopify/CartLine/0666a39c-8917-4706-b327-4ceb6bac130b?cart=hWNIvozkuQTQgWHlacYFjnAB",
+          "item": {
+            "id": "gid://shopify/ProductVariant/50026700112027",
+            "title": "The Collection Snowboard: Hydrogen",
+            "price": 60000,
+            "image_url": "https://cdn.shopify.com/s/files/1/0794/5394/6011/files/Main_0a40b01b-5021-48c1-80d1-aa8ab4876d3d.jpg?v=1793626196"
+          },
+          "quantity": 1,
+          "totals": [
+            {
+              "type": "subtotal",
+              "amount": 60000,
+              "display_text": "Subtotal"
+            },
+            {
+              "type": "total",
+              "amount": 60000,
+              "display_text": "Total"
+            }
+          ]
+        }
+      ],
+      "discounts": {
+        "codes": [],
+        "applied": []
+      },
+      "totals": [
+        {
+          "type": "subtotal",
+          "amount": 60000,
+          "display_text": "Subtotal"
+        },
+        {
+          "type": "total",
+          "amount": 60000,
+          "display_text": "Total"
+        }
+      ],
+      "expires_at": "2026-12-09T02:21:28Z",
+      "links": [
+        {
+          "type": "privacy_policy",
+          "title": "Privacy Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589299355.html?locale=en"
+        },
+        {
+          "type": "refund_policy",
+          "title": "Refund Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589332123.html?locale=en"
+        },
+        {
+          "type": "shipping_policy",
+          "title": "Shipping Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589364891.html?locale=en"
+        },
+        {
+          "type": "terms_of_service",
+          "title": "Terms of Service",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589397659.html?locale=en"
+        }
+      ],
+      "payment": {
+        "instruments": []
+      },
+      "messages": [
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "buyer_identity_contact_method_required",
+          "content": "Missing a valid contact method.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "delivery_address_required",
+          "content": "A destination address is required in order to continue.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "delivery_no_delivery_available_for_merchandise_line",
+          "content": "Your cart has been updated and the items you added can’t be shipped to your address. Remove the items to complete your order.",
+          "severity": "recoverable"
+        }
+      ],
+      "status": "incomplete",
+      "continue_url": "https://nordlicht-bb-1.myshopify.com/cart/c/hWNIvozkuQTQgWHlacYFjnAB?key=p3WDNkwSge3VdcSjS-79DpkfSeF9CKJL8zrGzK-59BR-_NFwCQkDrYBG_z7c58tuLJkg6o6bqRpAX-a64keQoAaO33GG7Z_8oFJyVYrBdJNjAoJz5Ix7OvqVowlRMIZgtiWC3pAGQimJqGQPPUMquU-OsSpjAXJElo17JIFvjODMNZYd0a-8xxN_8f3aFzBg"
+    }
+  },
+  {
+    "test": "P4 discount code stack",
+    "note": "",
+    "tool": "create_checkout",
+    "base": "https://nordlicht-bb-1.myshopify.com/api/ucp/mcp",
+    "request_arguments": {
+      "checkout": {
+        "line_items": [
+          {
+            "item": {
+              "id": "gid://shopify/ProductVariant/50026700112027"
+            },
+            "quantity": 1
+          }
+        ],
+        "discounts": {
+          "codes": [
+            "WELCOME10",
+            "WELCOME10",
+            "SAVE20",
+            "FREESHIP"
+          ]
+        }
+      }
+    },
+    "http": 200,
+    "isError": false,
+    "summary": {
+      "id": "gid://shopify/Checkout/hWNIvoztug50Tvu95ZpQeF6J?key=a8a128c66f2ac8e1b93adf2a740177bb",
+      "status": "incomplete",
+      "currency": "USD",
+      "items": [
+        {
+          "variant": "gid://shopify/ProductVariant/50026700112027",
+          "qty": 1,
+          "price": 60000,
+          "line_total": 60000
+        }
+      ],
+      "totals": {
+        "subtotal": 60000,
+        "total": 60000
+      },
+      "discounts": {
+        "codes": [
+          "WELCOME10",
+          "SAVE20",
+          "FREESHIP"
+        ],
+        "applied": []
+      },
+      "msg_codes": [
+        [
+          "buyer_identity_contact_method_required",
+          "recoverable"
+        ],
+        [
+          "delivery_address_required",
+          "recoverable"
+        ],
+        [
+          "delivery_no_delivery_available_for_merchandise_line",
+          "recoverable"
+        ],
+        [
+          "discount_code_invalid",
+          null
+        ],
+        [
+          "discount_code_invalid",
+          null
+        ],
+        [
+          "discount_code_invalid",
+          null
+        ]
+      ]
+    },
+    "raw": {
+      "id": "gid://shopify/Checkout/hWNIvoztug50Tvu95ZpQeF6J?key=a8a128c66f2ac8e1b93adf2a740177bb",
+      "currency": "USD",
+      "buyer": {
+        "consent": {
+          "dev.ucp.consent.analytics": {
+            "granted": false,
+            "source": "business",
+            "description": "Analytics and performance measurement"
+          },
+          "dev.ucp.consent.preferences": {
+            "granted": false,
+            "source": "business",
+            "description": "Remember preferences and personalize your shopping experience"
+          },
+          "dev.ucp.consent.sale_or_sharing": {
+            "granted": false,
+            "source": "business",
+            "description": "Sale or sharing of personal data with third parties"
+          },
+          "dev.ucp.consent.marketing": {
+            "granted": false,
+            "source": "business",
+            "description": "Marketing communications",
+            "segments": {
+              "dev.ucp.consent.marketing.email": {
+                "granted": false,
+                "source": "business",
+                "description": "Promotional emails"
+              },
+              "dev.ucp.consent.marketing.sms": {
+                "granted": false,
+                "source": "business",
+                "description": "Marketing text messages"
+              }
+            }
+          }
+        }
+      },
+      "line_items": [
+        {
+          "id": "gid://shopify/CartLine/96a654fb-6761-48f7-917e-c1b73418dd4b?cart=hWNIvoztug50Tvu95ZpQeF6J",
+          "item": {
+            "id": "gid://shopify/ProductVariant/50026700112027",
+            "title": "The Collection Snowboard: Hydrogen",
+            "price": 60000,
+            "image_url": "https://cdn.shopify.com/s/files/1/0794/5394/6011/files/Main_0a40b01b-5021-48c1-80d1-aa8ab4876d3d.jpg?v=1793626196"
+          },
+          "quantity": 1,
+          "totals": [
+            {
+              "type": "subtotal",
+              "amount": 60000,
+              "display_text": "Subtotal"
+            },
+            {
+              "type": "total",
+              "amount": 60000,
+              "display_text": "Total"
+            }
+          ]
+        }
+      ],
+      "discounts": {
+        "codes": [
+          "WELCOME10",
+          "SAVE20",
+          "FREESHIP"
+        ],
+        "applied": []
+      },
+      "totals": [
+        {
+          "type": "subtotal",
+          "amount": 60000,
+          "display_text": "Subtotal"
+        },
+        {
+          "type": "total",
+          "amount": 60000,
+          "display_text": "Total"
+        }
+      ],
+      "expires_at": "2026-12-09T02:21:29Z",
+      "links": [
+        {
+          "type": "privacy_policy",
+          "title": "Privacy Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589299355.html?locale=en"
+        },
+        {
+          "type": "refund_policy",
+          "title": "Refund Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589332123.html?locale=en"
+        },
+        {
+          "type": "shipping_policy",
+          "title": "Shipping Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589364891.html?locale=en"
+        },
+        {
+          "type": "terms_of_service",
+          "title": "Terms of Service",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589397659.html?locale=en"
+        }
+      ],
+      "payment": {
+        "instruments": []
+      },
+      "messages": [
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "buyer_identity_contact_method_required",
+          "content": "Missing a valid contact method.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "delivery_address_required",
+          "content": "A destination address is required in order to continue.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "delivery_no_delivery_available_for_merchandise_line",
+          "content": "Your cart has been updated and the items you added can’t be shipped to your address. Remove the items to complete your order.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "warning",
+          "content_type": "plain",
+          "code": "discount_code_invalid",
+          "content": "Enter a valid discount code"
+        },
+        {
+          "type": "warning",
+          "content_type": "plain",
+          "code": "discount_code_invalid",
+          "content": "Enter a valid discount code"
+        },
+        {
+          "type": "warning",
+          "content_type": "plain",
+          "code": "discount_code_invalid",
+          "content": "Enter a valid discount code"
+        }
+      ],
+      "status": "incomplete",
+      "continue_url": "https://nordlicht-bb-1.myshopify.com/cart/c/hWNIvoztug50Tvu95ZpQeF6J?key=DqonJCSZVpxMnWehg512c_7__Z8hsdIqCUZJO5f-KucnhY2w1mS-pYqzk0yB8LI3UtLUDcvTwm-xWjLgZ8HCIZaEqphXSeiufiu-t4M-6JaaDxk9HeOjdU6wZ4d4-J5cki7gRCUL2PQ_btiqyoRoLLVMlzSwsHzQsejISTetQv0bt2qreDhBk3XE__w1GOkG"
+    }
+  },
+  {
+    "test": "P5 currency EUR",
+    "note": "",
+    "tool": "create_checkout",
+    "base": "https://nordlicht-bb-1.myshopify.com/api/ucp/mcp",
+    "request_arguments": {
+      "checkout": {
+        "line_items": [
+          {
+            "item": {
+              "id": "gid://shopify/ProductVariant/50026700112027"
+            },
+            "quantity": 1
+          }
+        ],
+        "context": {
+          "currency": "EUR",
+          "address_country": "DE"
+        }
+      }
+    },
+    "http": 200,
+    "isError": false,
+    "summary": {
+      "id": "gid://shopify/Checkout/hWNIvp041No9kYrywQfXgXYZ?key=c8c76a55e81e06ff0235cb0fdb0047bf",
+      "status": "incomplete",
+      "currency": "USD",
+      "items": [
+        {
+          "variant": "gid://shopify/ProductVariant/50026700112027",
+          "qty": 1,
+          "price": 60000,
+          "line_total": 60000
+        }
+      ],
+      "totals": {
+        "subtotal": 60000,
+        "total": 60000
+      },
+      "discounts": {
+        "codes": [],
+        "applied": []
+      },
+      "msg_codes": [
+        [
+          "buyer_identity_contact_method_required",
+          "recoverable"
+        ],
+        [
+          "delivery_address_required",
+          "recoverable"
+        ],
+        [
+          "delivery_no_delivery_available_for_merchandise_line",
+          "recoverable"
+        ],
+        [
+          "currency_not_applied",
+          null
+        ]
+      ]
+    },
+    "raw": {
+      "id": "gid://shopify/Checkout/hWNIvp041No9kYrywQfXgXYZ?key=c8c76a55e81e06ff0235cb0fdb0047bf",
+      "currency": "USD",
+      "buyer": {
+        "consent": {
+          "dev.ucp.consent.analytics": {
+            "granted": true,
+            "source": "business",
+            "description": "Analytics and performance measurement"
+          },
+          "dev.ucp.consent.preferences": {
+            "granted": true,
+            "source": "business",
+            "description": "Remember preferences and personalize your shopping experience"
+          },
+          "dev.ucp.consent.sale_or_sharing": {
+            "granted": true,
+            "source": "business",
+            "description": "Sale or sharing of personal data with third parties"
+          },
+          "dev.ucp.consent.marketing": {
+            "granted": false,
+            "source": "business",
+            "description": "Marketing communications",
+            "segments": {
+              "dev.ucp.consent.marketing.email": {
+                "granted": false,
+                "source": "business",
+                "description": "Promotional emails"
+              },
+              "dev.ucp.consent.marketing.sms": {
+                "granted": false,
+                "source": "business",
+                "description": "Marketing text messages"
+              }
+            }
+          }
+        }
+      },
+      "line_items": [
+        {
+          "id": "gid://shopify/CartLine/c209a432-babf-4b29-b774-2327990d5645?cart=hWNIvp041No9kYrywQfXgXYZ",
+          "item": {
+            "id": "gid://shopify/ProductVariant/50026700112027",
+            "title": "The Collection Snowboard: Hydrogen",
+            "price": 60000,
+            "image_url": "https://cdn.shopify.com/s/files/1/0794/5394/6011/files/Main_0a40b01b-5021-48c1-80d1-aa8ab4876d3d.jpg?v=1793626196"
+          },
+          "quantity": 1,
+          "totals": [
+            {
+              "type": "subtotal",
+              "amount": 60000,
+              "display_text": "Subtotal"
+            },
+            {
+              "type": "total",
+              "amount": 60000,
+              "display_text": "Total"
+            }
+          ]
+        }
+      ],
+      "discounts": {
+        "codes": [],
+        "applied": []
+      },
+      "totals": [
+        {
+          "type": "subtotal",
+          "amount": 60000,
+          "display_text": "Subtotal"
+        },
+        {
+          "type": "total",
+          "amount": 60000,
+          "display_text": "Total"
+        }
+      ],
+      "expires_at": "2026-12-09T02:21:31Z",
+      "links": [
+        {
+          "type": "privacy_policy",
+          "title": "Privacy Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589299355.html?locale=en"
+        },
+        {
+          "type": "refund_policy",
+          "title": "Refund Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589332123.html?locale=en"
+        },
+        {
+          "type": "shipping_policy",
+          "title": "Shipping Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589364891.html?locale=en"
+        },
+        {
+          "type": "terms_of_service",
+          "title": "Terms of Service",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589397659.html?locale=en"
+        }
+      ],
+      "payment": {
+        "instruments": []
+      },
+      "messages": [
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "buyer_identity_contact_method_required",
+          "content": "Missing a valid contact method.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "delivery_address_required",
+          "content": "A destination address is required in order to continue.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "delivery_no_delivery_available_for_merchandise_line",
+          "content": "Your cart has been updated and the items you added can’t be shipped to your address. Remove the items to complete your order.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "info",
+          "code": "currency_not_applied",
+          "path": "$.currency",
+          "content_type": "plain",
+          "content": "Prices are in USD. The requested currency EUR is not available for this buyer, so it was not applied."
+        }
+      ],
+      "status": "incomplete",
+      "continue_url": "https://nordlicht-bb-1.myshopify.com/cart/c/hWNIvp041No9kYrywQfXgXYZ?key=Q905cVdXsYLpQbl33rvOhaeJlZRWg8qp_hTAwwJ8j0ItuQIk63zymPN3fz-4OLRKlmJ_xnmVVadyaNVJss88SzVsKitNBsl9x3yO1z99rycXKtzKhE9WKNDn4qNFIvti8XQtz-QeIn9DCWNByBKOPn7B1lK0IKiWerY42gZ3yPQTjLwgxbFIXS8ws60RT6VV"
+    }
+  },
+  {
+    "test": "P6 currency XYZ bogus",
+    "note": "",
+    "tool": "create_checkout",
+    "base": "https://nordlicht-bb-1.myshopify.com/api/ucp/mcp",
+    "request_arguments": {
+      "checkout": {
+        "line_items": [
+          {
+            "item": {
+              "id": "gid://shopify/ProductVariant/50026700112027"
+            },
+            "quantity": 1
+          }
+        ],
+        "context": {
+          "currency": "XYZ"
+        }
+      }
+    },
+    "http": 200,
+    "isError": false,
+    "summary": {
+      "id": "gid://shopify/Checkout/hWNIvp0JDdFkIFMLYwESuptb?key=874e03779a1752fcdfe6a253acbd016e",
+      "status": "incomplete",
+      "currency": "USD",
+      "items": [
+        {
+          "variant": "gid://shopify/ProductVariant/50026700112027",
+          "qty": 1,
+          "price": 60000,
+          "line_total": 60000
+        }
+      ],
+      "totals": {
+        "subtotal": 60000,
+        "total": 60000
+      },
+      "discounts": {
+        "codes": [],
+        "applied": []
+      },
+      "msg_codes": [
+        [
+          "buyer_identity_contact_method_required",
+          "recoverable"
+        ],
+        [
+          "delivery_address_required",
+          "recoverable"
+        ],
+        [
+          "delivery_no_delivery_available_for_merchandise_line",
+          "recoverable"
+        ],
+        [
+          "currency_not_applied",
+          null
+        ]
+      ]
+    },
+    "raw": {
+      "id": "gid://shopify/Checkout/hWNIvp0JDdFkIFMLYwESuptb?key=874e03779a1752fcdfe6a253acbd016e",
+      "currency": "USD",
+      "buyer": {
+        "consent": {
+          "dev.ucp.consent.analytics": {
+            "granted": false,
+            "source": "business",
+            "description": "Analytics and performance measurement"
+          },
+          "dev.ucp.consent.preferences": {
+            "granted": false,
+            "source": "business",
+            "description": "Remember preferences and personalize your shopping experience"
+          },
+          "dev.ucp.consent.sale_or_sharing": {
+            "granted": false,
+            "source": "business",
+            "description": "Sale or sharing of personal data with third parties"
+          },
+          "dev.ucp.consent.marketing": {
+            "granted": false,
+            "source": "business",
+            "description": "Marketing communications",
+            "segments": {
+              "dev.ucp.consent.marketing.email": {
+                "granted": false,
+                "source": "business",
+                "description": "Promotional emails"
+              },
+              "dev.ucp.consent.marketing.sms": {
+                "granted": false,
+                "source": "business",
+                "description": "Marketing text messages"
+              }
+            }
+          }
+        }
+      },
+      "line_items": [
+        {
+          "id": "gid://shopify/CartLine/22d2ecd2-1cc1-4b24-8198-828f2823f4c1?cart=hWNIvp0JDdFkIFMLYwESuptb",
+          "item": {
+            "id": "gid://shopify/ProductVariant/50026700112027",
+            "title": "The Collection Snowboard: Hydrogen",
+            "price": 60000,
+            "image_url": "https://cdn.shopify.com/s/files/1/0794/5394/6011/files/Main_0a40b01b-5021-48c1-80d1-aa8ab4876d3d.jpg?v=1793626196"
+          },
+          "quantity": 1,
+          "totals": [
+            {
+              "type": "subtotal",
+              "amount": 60000,
+              "display_text": "Subtotal"
+            },
+            {
+              "type": "total",
+              "amount": 60000,
+              "display_text": "Total"
+            }
+          ]
+        }
+      ],
+      "discounts": {
+        "codes": [],
+        "applied": []
+      },
+      "totals": [
+        {
+          "type": "subtotal",
+          "amount": 60000,
+          "display_text": "Subtotal"
+        },
+        {
+          "type": "total",
+          "amount": 60000,
+          "display_text": "Total"
+        }
+      ],
+      "expires_at": "2026-12-09T02:21:33Z",
+      "links": [
+        {
+          "type": "privacy_policy",
+          "title": "Privacy Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589299355.html?locale=en"
+        },
+        {
+          "type": "refund_policy",
+          "title": "Refund Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589332123.html?locale=en"
+        },
+        {
+          "type": "shipping_policy",
+          "title": "Shipping Policy",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589364891.html?locale=en"
+        },
+        {
+          "type": "terms_of_service",
+          "title": "Terms of Service",
+          "url": "https://checkout.shopify.com/79453946011/policies/45589397659.html?locale=en"
+        }
+      ],
+      "payment": {
+        "instruments": []
+      },
+      "messages": [
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "buyer_identity_contact_method_required",
+          "content": "Missing a valid contact method.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "delivery_address_required",
+          "content": "A destination address is required in order to continue.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "delivery_no_delivery_available_for_merchandise_line",
+          "content": "Your cart has been updated and the items you added can’t be shipped to your address. Remove the items to complete your order.",
+          "severity": "recoverable"
+        },
+        {
+          "type": "info",
+          "code": "currency_not_applied",
+          "path": "$.currency",
+          "content_type": "plain",
+          "content": "Prices are in USD. The requested currency XYZ is not available for this buyer, so it was not applied."
+        }
+      ],
+      "status": "incomplete",
+      "continue_url": "https://nordlicht-bb-1.myshopify.com/cart/c/hWNIvp0JDdFkIFMLYwESuptb?key=r6NsZ1ECfncIWxFU-L2bbOtUe65VHPUZ1WwGwAO85Yf8hdEwGuYrJOl43493xVabUpMoeuPkJEZJI7uZSf6T2ZZu904K0L3MF870nITTCrGHKfhsHiY24w_gLfeixRuloGb3ZUv66zexwbsC7Xodv2y-xp03au8N_c7zbHxorPRrspuSz_27xLYFBBkh3w3K"
+    }
+  },
+  {
+    "test": "P7 buyer injected fields",
+    "note": "",
+    "tool": "create_checkout",
+    "base": "https://nordlicht-bb-1.myshopify.com/api/ucp/mcp",
+    "request_arguments": {
+      "checkout": {
+        "line_items": [
+          {
+            "item": {
+              "id": "gid://shopify/ProductVariant/50026700112027"
+            },
+            "quantity": 1
+          }
+        ],
+        "buyer": {
+          "email": "attacker@example.com",
+          "phone_number": "+490000000",
+          "customer_id": "gid://shopify/Customer/1",
+          "id": "gid://shopify/Customer/1",
+          "tags": [
+            "vip"
+          ],
+          "tax_exempt": true
+        }
+      }
+    },
+    "http": 200,
+    "isError": true,
+    "summary": {
+      "id": null,
+      "status": null,
+      "currency": null,
+      "items": [],
+      "totals": {},
+      "discounts": null,
+      "msg_codes": [
+        [
+          "buyer_identity_phone_is_invalid",
+          "unrecoverable"
+        ]
+      ]
+    },
+    "raw": {
+      "messages": [
+        {
+          "type": "error",
+          "content_type": "plain",
+          "code": "buyer_identity_phone_is_invalid",
+          "content": "Phone is invalid",
+          "severity": "unrecoverable",
+          "path": "$.buyer.phone_number"
+        }
+      ],
+      "continue_url": "https://nordlicht-bb-1.myshopify.com/"
+    }
+  }
+]

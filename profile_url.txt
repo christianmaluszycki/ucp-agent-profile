@@ -1,1 +1,1 @@
-https://cdn.jsdelivr.net/gh/christianmaluszycki/ucp-agent-profile@main/ucp-demo-agent.json
+https://cdn.jsdelivr.net/gh/christianmaluszycki/ucp-agent-profile@main/ucp-agent-v2.json
